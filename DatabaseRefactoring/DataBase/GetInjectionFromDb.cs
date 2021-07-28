@@ -16,8 +16,6 @@ namespace DatabaseRefactoring.DataBase
 
         public ICollection<InjectionFactData> Execute(InjectionInputParametesModel parameters, SqlConnection connection)
         {
-            var nahuynado = parameters;
-
             var injectionFactData = new Dictionary<int, Dictionary<DateTime, Dictionary<int, object>>>();
             var monthData = new Dictionary<DateTime, Dictionary<int, object>>();
             using (connection)
